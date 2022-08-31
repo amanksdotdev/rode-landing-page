@@ -1,0 +1,71 @@
+---
+import { VscLocation } from "react-icons/vsc";
+import { AiFillCaretDown } from "react-icons/ai";
+import { HiOutlineUser } from "react-icons/hi";
+import { IoSearchOutline } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
+import Container from "./Container.astro";
+---
+
+
+<div class="border-b py-1 hidden lg:block">
+  <Container className="justify-between flex">
+    <div class="flex items-center text-[rgba(0,0,0,0.5)] cursor-pointer">
+      <span class="text-2xl">
+        <VscLocation />
+      </span>
+      <span class="text-sm">EN</span>
+      <span class="text-[12px] ml-1">
+        <AiFillCaretDown />
+      </span>
+    </div>
+    <div class="text-2xl text-slate-500">
+      <HiOutlineUser />
+    </div>
+  </Container>
+</div>
+<nav class="shadow sticky top-0 z-10 bg-white">
+  <Container className="flex justify-between lg:py-4 py-3 items-center">
+    <div>
+      <div
+        class="text-lg text-[rgba(0,0,0,0.5)] flex items-center gap-4 cursor-pointer"
+      >
+        <img
+          src="/assets/rodelogo.svg"
+          class="w-full max-w-[6rem] hidden lg:block"
+        />
+        <span class="lg:hidden">
+          <GiHamburgerMenu />
+        </span>
+        <div class="flex items-center text-[rgba(0,0,0,0.5)] lg:hidden">
+          <span class="text-2xl">
+            <VscLocation />
+          </span>
+          <span class="text-sm">EN</span>
+          <span class="text-[12px] ml-1">
+            <AiFillCaretDown />
+          </span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="hidden lg:block">
+        <ul class="flex gap-12 text-sm">
+          <li><a class="py-1" href="#">PRODUCTS</a></li>
+          <li><a class="py-1" href="#">USER GUIDES</a></li>
+          <li><a class="py-1" href="#">SOLUTIONS</a></li>
+          <li><a class="py-1" href="#">APPAREL</a></li>
+          <li><a class="py-1" href="#">SUPPORT</a></li>
+        </ul>
+      </div>
+      <div class="lg:hidden mr-14 cursor-pointer">
+        <img src="/assets/rodelogo.svg" class="w-full max-w-[5rem]" />
+      </div>
+    </div>
+    <div>
+      <span class="text-2xl lg:text-3xl cursor-pointer">
+        <IoSearchOutline />
+      </span>
+    </div>
+  </Container>
+</nav>

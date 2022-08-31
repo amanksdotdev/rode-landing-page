@@ -1,0 +1,42 @@
+---
+import Container from "../components/Container.astro";
+import { CgChevronRight } from "react-icons/cg";
+---
+
+<section
+  id="pod-mic"
+  class="flex pb-8 lg:py-56 lg:bg-[url('/assets/podmic-desktop.jpg')] bg-no-repeat bg-cover bg-center"
+>
+  <Container
+    className="flex flex-col-reverse lg:flex-row items-center lg:text-white"
+  >
+    <div class="flex-1 flex items-center justify-center">
+      <div class="text-center flex flex-col items-center">
+        <div class="flex justify-center mb-8">
+          <img src="/assets/podmic-heading.svg" class="block w-[32rem]" />
+        </div>
+        <h2 class="mb-2 text-2xl">Broadcast-grade Dynamic Microphone</h2>
+        <p
+          class="mb-12 text-[rgba(0,0,0,0.5)] lg:text-[rgba(255,255,255,0.5)] max-w-[30rem]"
+        >
+          Give your voice that rich, broadcast sound with the PodMic. Perfect
+          for livestreaming, voice-over, podcasting and gameplay.
+        </p>
+        <div class="flex gap-4 justify-center items-center font-medium">
+          <a href="#" class="text-primary flex items-center"
+            >LEARN MORE <span class="font-bold text-2xl"
+              ><CgChevronRight />
+            </span>
+          </a>
+          <button
+            class="bg-primary py-1 px-4 rounded-full hover:text-primary hover:bg-white transition border border-primary text-white"
+            >BUY NOW</button
+          >
+        </div>
+      </div>
+    </div>
+    <div class="flex-1 mb-8">
+      <img src="/assets/podmic.jpg" class="lg:hidden" />
+    </div>
+  </Container>
+</section>

@@ -1,0 +1,40 @@
+---
+import Container from "../components/Container.astro";
+import { CgChevronRight } from "react-icons/cg";
+---
+
+<section
+  id="nth-usb"
+  class="flex pb-8 lg:py-56 lg:bg-[url('/assets/nt-usb.jpg')] bg-no-repeat bg-cover bg-center"
+>
+  <Container className="flex flex-col lg:flex-row items-center">
+    <div class="flex-1 mb-8">
+      <img src="/assets/nt-usb-mobile.jpg" class="lg:hidden" />
+    </div>
+    <div class="flex-1 flex items-center justify-center">
+      <div class="text-center flex flex-col items-center">
+        <div class="flex justify-center mb-8">
+          <img src="/assets/nt-usb-heading.svg" class="block w-[32rem]" />
+        </div>
+        <h2 class="mb-2 text-2xl">Studio-Quality Recording, Made Simple</h2>
+        <p class="mb-12 text-[rgba(0,0,0,0.5)] max-w-[30rem]">
+          The NT-USB is a studio-quality USB condenser microphone that offers
+          impeccable audio, elegant looks and premium features, all in an
+          easy-to-use form factor, the NT-USB will have you sounding like a pro
+          in seconds.
+        </p>
+        <div class="flex gap-4 justify-center items-center font-medium">
+          <a href="#" class="text-primary flex items-center"
+            >LEARN MORE <span class="font-bold text-2xl"
+              ><CgChevronRight />
+            </span>
+          </a>
+          <button
+            class="bg-primary py-1 px-4 rounded-full hover:text-primary hover:bg-white transition border border-primary text-white"
+            >BUY NOW</button
+          >
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>
