@@ -9,6 +9,8 @@ import NTHUSB from "../components/NTHUSB.astro";
 import PodMic from "../components/PodMic.astro";
 import WirelessGo from "../components/WirelessGo.astro";
 import NTUSBMini from "../components/NTUSBMini.astro";
+import ImageCard from "../components/ImageCard.astro";
+import BlogCard from "../components/BlogCard.astro";
 ---
 
 <Layout title="RØDE Microphones">
@@ -19,4 +21,59 @@ import NTUSBMini from "../components/NTUSBMini.astro";
   <PodMic />
   <WirelessGo />
   <NTUSBMini />
+  <section>
+    <Container className="text-center">
+      <h1 class="text-4xl text-[#767676] font-semibold my-8">
+        Explore The RØDE Range
+      </h1>
+      <ImageCard text="MICROPHONES" imageSrc="/assets/microphones.png" />
+      <ImageCard text="INTERFACES & MIXERS" imageSrc="/assets/mixers.jpg" />
+      <ImageCard text="SOFTWARE" imageSrc="/assets/software.png" />
+      <ImageCard text="ACCESSORIES" imageSrc="/assets/accessories.png" />
+      <h1 class="text-4xl font-semibold my-8 text-primary">
+        Latest From The RØDE Blog
+      </h1>
+    </Container>
+  </section>
+  <section class="bg-[#f8f9fa] py-12">
+    <Container className="text-center flex flex-wrap gap-8 justify-center">
+      <BlogCard
+        heading="XLR vs USB Microphones: Which is Best for You?"
+        paragraph="We explore the differences between XLR and USB microphones, the advantages of each and which type is best suited to your needs."
+        imageSrc="/assets/xlrvsusb.jpg"
+      />
+      <BlogCard
+        heading="The Difference Between Large-Diaphragm and Small-Diaphragm Condenser Microphones"
+        paragraph="We explore the difference between large- and small-diaphragm condenser microphones, and what each is best used for."
+        imageSrc="/assets/largevssmall.jpeg"
+      />
+      <BlogCard
+        heading="What is a Condenser Microphone and When to Use One"
+        paragraph="Learn more about the different types of condenser mics, how they work and the best applications for using them."
+        imageSrc="/assets/condenser.jpg"
+      />
+      <BlogCard
+        heading="Firmware Version 1.0.7 for the RØDECaster Pro II is Available Now"
+        paragraph="Firmware version 1.0.7 includes key feature additions, such as custom routing for USB and Bluetooth outputs, and more."
+        imageSrc="/assets/firmware.jpg"
+      />
+    </Container>
+  </section>
+
+  <footer class="bg-white py-16">
+    <hr>
+    <Container className="flex flex-col lg:flex-row justify-between py-16">
+      <img src="/assets/RodeFooter.svg" width="120px" />
+      <div class="lg:w-1/3 flex flex-col lg:items-end items-start">
+        <h3 class="lg:text-right font-semibold text-[#262626] text-3xl">
+          Subscribe to our latest news and offers
+        </h3>
+        <button
+          class="rounded-full text-white font-medium bg-primary py-2 px-6 mt-8"
+          >Sign Up</button
+        >
+      </div>
+    </Container>
+    <hr>
+  </footer>
 </Layout>

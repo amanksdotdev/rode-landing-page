@@ -1,0 +1,23 @@
+---
+export interface Props {
+  text: string;
+  imageSrc: string;
+}
+
+const { text, imageSrc } = Astro.props;
+---
+
+<a
+  href="#"
+  class="flex items-center justify-center max-w-[1110px] max-h-[277px] mx-auto mb-8"
+>
+  <img
+    src={imageSrc}
+    class="w-full hover:brightness-75 transition duration-300"
+  />
+  <h2
+    class="lg:text-6xl tracking-wide text-3xl font-semibold text-white z-10 absolute"
+  >
+    {text}
+  </h2>
+</a>

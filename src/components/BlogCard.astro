@@ -1,0 +1,27 @@
+---
+export interface Props {
+  heading: string;
+  paragraph: string;
+  imageSrc: string;
+}
+
+const { heading, paragraph, imageSrc } = Astro.props;
+---
+
+<div class="bg-white text-center text-[#262626] max-w-[538px]">
+  <div class="p-3">
+    <h2 class="text-3xl">
+      {heading}
+    </h2>
+  </div>
+  <div><img src={imageSrc} width="100%" /></div>
+  <div class="p-4">
+    <p>
+      {paragraph}
+    </p>
+    <button
+      class="rounded-full text-white font-medium bg-primary py-2 px-6 mt-8"
+      >LEARN MORE</button
+    >
+  </div>
+</div>
