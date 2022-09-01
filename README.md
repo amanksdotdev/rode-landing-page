@@ -1,10 +1,7 @@
-# Welcome to [Astro](https://astro.build)
+# [Rode.com](https://rode.com) Landing Page Clone
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+<img width="1432" alt="RØDE Microphones 2022-09-02 01-45-56" src="https://user-images.githubusercontent.com/40262320/188005537-3278627f-a003-4334-87f6-646c61cdffe0.png">
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
 
 
 ## 🚀 Project Structure
